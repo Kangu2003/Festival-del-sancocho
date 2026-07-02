@@ -62,3 +62,36 @@
 .festival-hero-buttons {
     justify-content: center !important;
 }
+
+/* Responsive adjustments para el festival */
+@media (max-width: 768px) {
+    .festival-date-wrapper {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-bottom: 2rem;
+        animation: none; /* Desactivar flotación en móviles para ahorrar espacio o dejarla suave */
+    }
+    
+    .festival-date-badge {
+        max-width: 200px; /* Hacer el badge más pequeño */
+        margin: 0 auto;
+    }
+
+    /* Reducir el texto para que no abrume en pantallas chicas */
+    .festival-hero-desc {
+        font-size: 1.2rem !important;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .festival-date-badge {
+        max-width: 150px;
+    }
+    
+    .festival-hero-desc {
+        font-size: 1.1rem !important;
+    }
+}

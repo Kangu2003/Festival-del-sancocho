@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorias Sancocho 2025 - Festival del Sancocho</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/inicio.css">
+    <link rel="stylesheet" href="CSS/carrusel.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="IMG/logo.png" alt="Festival del Sancocho Logo" class="nav-logo">
+                <span class="logo-text">Festival del Sancocho</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#nosotros">Sobre Nosotros</a></li>
+                <li><a href="eventos.html" class="active">Nuestros eventos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Estilo Recuerdo) -->
+    <header id="inicio" class="hero hero-past-event">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge-event"><i class="fa-solid fa-clock-rotate-left"></i> Diciembre 2025 - Barrio Las
+                    Malvinas</span>
+                <h1>Memorias del Festival <br>del Sancocho</h1>
+                <p>Un viaje al pasado para revivir los sabores, la alegría y la unión de nuestra comunidad en la edición
+                    del año pasado.</p>
+                <div class="hero-buttons">
+                    <a href="#resumen" class="btn-primary btn-large"><i class="fa-solid fa-book-open"></i> Leer
+                        Resumen</a>
+                    <a href="#galeria" class="btn-secondary btn-large"><i class="fa-solid fa-images"></i> Ver
+                        Galería</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Resumen del Evento -->
+    <section id="resumen" class="summary-section">
+        <div class="summary-container">
+            <h2 class="colorful-text">Lo que vivimos</h2>
+            <p class="summary-text">
+                <strong>(Reemplaza este texto con tu resumen real)</strong> <br><br>
+                El Festival del Sancocho 2025 fue un éxito rotundo en el Barrio Las Malvinas. Desde tempranas horas de
+                la mañana, el humo de la leña y el aroma de los ingredientes frescos inundaron las calles, atrayendo a
+                cientos de visitantes de toda la región. Nuestras cocineras tradicionales demostraron una vez más por
+                qué nuestra sazón es inigualable, preparando ollas gigantes de sancocho que deleitaron a cada asistente.
+                <br><br>
+                Además de la gastronomía, el evento estuvo acompañado de música en vivo, bailes folclóricos y
+                actividades para los más pequeños. Fue un día donde celebramos nuestras raíces y fortalecimos los lazos
+                comunitarios. Agradecemos a todos los que hicieron parte de esta mágica experiencia y esperamos que
+                sigan apoyando nuestra tradición por muchos años más.
+            </p>
+        </div>
+    </section>
+
+    <!-- Galería / Carrusel -->
+    <section id="galeria" class="carousel-section">
+        <div class="section-header text-center" style="margin-bottom: 2rem;">
+            <h2 class="colorful-text">Galería de Recuerdos</h2>
+            <p>Revive los mejores momentos del festival a través de estas fotos y videos</p>
+        </div>
+
+        <div class="carousel-container">
+            <!-- Pista del carrusel donde van los slides -->
+            <div class="carousel-track" id="carouselTrack">
+
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <img src="IMG/FOTO 1.jpeg" alt="Recuerdo del festival - Foto 1">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="IMG/FOTO 2.jpeg" alt="Recuerdo del festival - Foto 2">
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="IMG/FOTO 3.jpeg" alt="Recuerdo del festival - Foto 3" style="object-position: top;">
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <img src="IMG/FOTO 4.jpeg" alt="Recuerdo del festival - Foto 4">
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-slide">
+                    <img src="IMG/FOTO 5.jpeg" alt="Recuerdo del festival - Foto 5">
+                </div>
+
+                <!-- Slide 6: Ejemplo de Video de YouTube -->
+                <div class="carousel-slide">
+                    <div class="placeholder-media">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>VIDEO - Reemplaza con tu enlace de YouTube</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Indicadores abajo del carrusel -->
+        <div class="carousel-dots" id="carouselDots">
+            <!-- Los puntitos se generan dinámicamente con JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,137.9,122.9,207.2,111.45Z"
+                    fill="#1b4965"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="IMG/logo.png" alt="Logo" class="footer-logo">
+                <div>
+                    <h2>Festival del Sancocho</h2>
+                    <p>San Zenón - Manteniendo Viva la Tradición</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Festival del Sancocho. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Lógica JavaScript del Carrusel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Elementos del Carrusel
+            const track = document.getElementById('carouselTrack');
+            const slides = Array.from(track.children);
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const dotsContainer = document.getElementById('carouselDots');
+            
+            // Generar puntitos dinámicamente según la cantidad de slides
+            dotsContainer.innerHTML = '';
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.dataset.slide = index;
+                dotsContainer.appendChild(dot);
+            });
+            const dots = Array.from(document.querySelectorAll('.dot'));
+
+            let currentIndex = 0;
+
+            function updateCarousel(index) {
+                // Calcular el desplazamiento en píxeles para centrar el slide actual
+                const containerWidth = track.parentElement.clientWidth;
+                const slideWidth = containerWidth * 0.8; // Porque flex es 80%
+                const offset = (containerWidth / 2) - (slideWidth / 2) - (index * slideWidth);
+
+                track.style.transform = `translateX(${offset}px)`;
+
+                // Actualizar clases de los slides (efecto centro)
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active-slide');
+                    if (i === index) slide.classList.add('active-slide');
+                });
+
+                // Actualizar estilo de los puntitos
+                dots.forEach(dot => dot.classList.remove('active'));
+                if(dots[index]) dots[index].classList.add('active');
+            }
+
+            // Reposicionar al cambiar tamaño de ventana
+            window.addEventListener('resize', () => {
+                setTimeout(() => updateCarousel(currentIndex), 100);
+            });
+
+            // Inicializar carrusel
+            updateCarousel(currentIndex);
+
+            // Evento Botón Siguiente
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel(currentIndex);
+            });
+
+            // Evento Botón Anterior
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateCarousel(currentIndex);
+            });
+
+            // Eventos Puntitos
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel(currentIndex);
+                });
+            });
+
+            // Lógica para el menú activo al hacer scroll
+            const sections = document.querySelectorAll('section[id], header[id]');
+            const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+            window.addEventListener('scroll', () => {
+                let currentId = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (window.scrollY >= (sectionTop - 150)) {
+                        currentId = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (currentId && link.getAttribute('href') === '#' + currentId) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

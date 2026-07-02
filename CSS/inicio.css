@@ -69,6 +69,8 @@ a {
     font-weight: 700;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    white-space: nowrap;
     gap: 0.5rem;
     transition: var(--transition);
     border: none;
@@ -89,6 +91,8 @@ a {
     font-weight: 700;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    white-space: nowrap;
     gap: 0.5rem;
     transition: var(--transition);
     border: 2px solid var(--logo-blue);
@@ -876,6 +880,8 @@ a {
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
     .footer-content {
@@ -904,9 +910,16 @@ a {
         font-size: 3.2rem;
     }
     
+    /* Ajustes para botones en móviles para evitar que desborden */
     .btn-large {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+        width: 100%;
+        white-space: normal;
+    }
+
+    .hero-buttons {
+        gap: 0.8rem;
     }
     
     .logo-text {
